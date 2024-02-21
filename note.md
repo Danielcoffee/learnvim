@@ -179,4 +179,3 @@
 # Vim as IDE
 # Vi is everywhere
 # Epilogue
-
