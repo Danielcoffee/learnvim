@@ -40,7 +40,7 @@
 - Use 'u' to undo last command
 - Use 'U': undo to original state.
 - Use "CTRL-R": redo
-
+b
 ## Replace
 - 'p': use when after delete, will put all under the cursor
 - 'P': paste above line
