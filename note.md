@@ -142,7 +142,7 @@
 - M: center of the screen
 - <number>H: line number under H: fixme
 - <number>L: line number above L: fixme
-
+- Work on ubuntu
 
 
 
@@ -160,10 +160,24 @@
 
 
 
-## Movement by Searches
+## Movement by Searches: delete & change
+- /: search forward
+- ?: search backward
+- n: forward direction
+- N: opposite of direction
+- combine with c or d to change or delete: d?move: POWERFUL
+
+### search & delete & change inline
+- fx: find 'x' in line
+- Fx: find 'x' backward in line
+- tx: to 'x' in line
+- Tx: to 'x' back in line
+- ';': continues
+- ',': opposite search
+- combine with delete & change: dfc, cfc, vfc, ...
+
+
 ## Movement by lines number
-
-
 
 # Beyond the basic
 # The ex editor
