@@ -113,7 +113,7 @@
 
 with a screen editor you can
 scroll the page,
-move the cursor
+move the cursor im here now. this is my first time i use keyboard in my in my i pad
 
 
 # Moving around in a hurry
