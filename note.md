@@ -176,6 +176,14 @@
 - ',': opposite search
 - combine with delete & change: dfc, cfc, vfc, ...
 
+### search and replace
+- :s/old/new/g	single line
+- :%s/old/new/g all occurrences
+- :s/old/new/gi casesensitive
+- :s/old/new/gic confirmation
+- :s/<old>/new/gic only word "old"
+
+
 
 ## Movement by lines number
 
