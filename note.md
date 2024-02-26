@@ -1,4 +1,4 @@
-# HELLO - VIM command
+# HELLO - VIM commands
 
 ## MODE
 
@@ -20,7 +20,6 @@
 - We can ":set vm=10": this is 'wrapmargin' at 10 characters.
 - Remember a newline in 'vi'
 
-
 3. Movement by text blocks
 
 - w: forward
@@ -30,7 +29,9 @@
 - G: go to line
 - We can combine with number: 2G, 2w, 3b, ......
 - first character of next line: '+'
-- first character of previous line: '-'
+- first character of pre<number>G: to number of line
+- :set nu or :set nonu : turn on and off
+- Use `` to back the original positionvious line: '-'
 
 #### Delete
 - 'dd': delete line
@@ -186,9 +187,50 @@
 
 
 ## Movement by lines number
+- <number>G: to number of line
+- :set nu or :set nonu : turn on and off
+- Use `` to back the original position
+- '': to the original line
+
 
 # Beyond the basic
+- About pattern: c/pattern, d/pattern, y/pattern
+- cn, dn, yn: all
+
+## Advanceing to a specific place
+$ vim -c n <file>
+- open file at number <n>
+$ vim -c /pattern file
+- open file at the first occurrence of pattern (-c: command)
+$ vim + file
+- open file at the last line
+- `:!mkdir -p %:h`: create new folder and file
+-- this is comment
+
+- nvim -c /HERE <filename>: open to specific place.
+- vim -R <file>
+- view <file>: open in readonly
+- vi -r <filename>: restore wrap
+
+## Recovering deletion
+- "2p: second to last deletion: then combine 'u' and '.' to select correct
+- we have 9 deletion
+-  combine
+- the pattern look like that: "1pa.u.u.u 
+- 
+
+## Yanking nameed register
+- "ayy: yanking to a then "ap: to use
+- "d7yy: yanking then use: "dp to use
+- "Ayy: with capital letter to append text
+
+## Marking place
+- m<letter>: mark new place
+- 'x or `x to exactly or first character of line.
+
 # The ex editor
+-ZZZ 
+
 # Global replacement
 # Advanced editing
 # Vim improve
