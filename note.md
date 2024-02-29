@@ -229,9 +229,74 @@ $ vim + file
 - 'x or `x to exactly or first character of line.
 
 # The ex editor
--ZZZ 
+- use: to move ex editor from vim
+- :2m1: move line 2 under 1
+- :1,2d: delete line 1 & 2
+- :2,5co7: copy line 2 to 5 then put under line 7
+
+## Line addressing number
+- .: for current line
+- $: for the last line
+- %: for every line
+- :.,$d: delete from current to last line.
+- :%d: delete all line
+- :%t$: duplicate file
+
+can combine with + and - like that
+- -,+d: delete 3 lines
+
+## Search pattern
+- :/pattern/d: delete line with pattern
+- :/pattern/+d: delete next line from pattern
+- :.,/pattern/m23:
+- :/pattern1/pattern2/d 
+
+## Redefining current line
+- :100; +3 p: print line 100 to 103
+
+## Saving
+- :w %.new
+- 200, 300w newfile: save part of file
+- 350,$w >> newfile: append to newfile
+
+## read file
+:r filename
+:12r filename -> insert file to line 12
+
+## Edit multi file
+- nvim filename{1..10}
+- Can use :next | :n | :prev | :last | :args | :rew | to control
+- Can call other file to edit:   :e <filename>
+- '%' can use current file
+- '#' alternate filename. We can switch two file use ':e #'
+- Switch back two file edit: 'CTRL + ^'
+- ':e!' can discard all edit -> to last save
 
 # Global replacement
+1. The substitute command
+- `:s/old/new/` : substitute old to new
+- `:s/old/new/g`: global
+- `50,100s/old/new/g` : search line 50 to 100
+- `1,$s/old/new/g`  or `:%s/old/new/g` search entire file
+
+2. Confirming Substitutions
+- confirm with /c then: `l`: for last, `q`: quit
+- c-e: scroll up
+- c-y: scroll down
+- `n`: repeat last search. Combine with `cw` to change word
+- `.`: repeat last command
+
+
+
+3. Doing thing across the files
+4. Context-Sensitive Replacement
+5. Pattern-Matching rules
+6. pattern-matching example
+7. a final look at pattern matching
+
+
+
+
 # Advanced editing
 # Vim improve
 # Graphical Vim
