@@ -286,12 +286,42 @@ can combine with + and - like that
 - `n`: repeat last search. Combine with `cw` to change word
 - `.`: repeat last command
 
-
-
 3. Doing thing across the files
+- `:g/pattern command` use this. or combine with `s`
+- `:g/# FIXME/s/FIXME/DONE`
+
 4. Context-Sensitive Replacement
+- `:%s/editer/editor/g`     use this for global
+- `:g/pattern/s/old/new/g` fisrt `g` is global file. second `g` is global on that line: POWERFUL
+
 5. Pattern-Matching rules
+- `.` any single character without newline
+- `*` repeat none or more
+- `+` repeat one or more
+- `^` begining of the line
+- `$` end of the line
+- `\` treat the special character next
+- `[]` match one of character inside, range,....: has there special case `-`, `]` and `\`. `^` put begining inside mean `not`
+- Can use () for buffer 1,... then use it: `:g/\(t.*n\) \(use\)/s//\2 \1/c`  POWERFUL
+- `\>`: match only the end
+- `\<`: match only the beginning
+- `&` replace with enrite text matched: `:s/daniel/& tran/` replace by daniel tran
+- `~` replace the string in the `last command`. 
+    + `:s/this/that` the first command then
+    + `:s/this/~` can use in the second command.
+    + `:/hello` then `:~` can change to `that`
+- \u, \l, \U, \L, \e, \E: upper & lowercase. `:s/\(this\)/\U\1` change to THIS
+- `:s` can use as the last command POWERFUL
+- `:&` or `:%&g` can repeat the last substitution
+- `:%s;/user1/tim;/home/tim;g` can use as delimiter
+
 6. pattern-matching example
+- `:%s/\<child\>/&ren/g`    replace child by children
+- `:g/<syntax>/.,/<descrtiption>/-1 m /<parameter>/-1 --> FIXME
+- `:g/^$/d` delete all empty line
+- `:g/^[ tab]*$/d` delete all empty line inclue (space or tab)
+- `:%s/^  *//` or delete all leading space
+- `:%s/  *$//` delete all ending space
 7. a final look at pattern matching
 
 
