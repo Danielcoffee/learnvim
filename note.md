@@ -86,6 +86,7 @@
 - number + insert
 - 2ra, 23a* 'esc', 3i*'esc',
 
+
 ## Copy
 - Can use 'yw': copy one word
 - use 'yy' copy whole line
@@ -215,9 +216,7 @@ $ vim + file
 ## Recovering deletion
 - "2p: second to last deletion: then combine 'u' and '.' to select correct
 - we have 9 deletion
--  combine
 - the pattern look like that: "1pa.u.u.u 
-- 
 
 ## Yanking nameed register
 - "ayy: yanking to a then "ap: to use
@@ -265,6 +264,7 @@ can combine with + and - like that
 
 ## Edit multi file
 - nvim filename{1..10}
+- `:args`: to show file in edit
 - Can use :next | :n | :prev | :last | :args | :rew | to control
 - Can call other file to edit:   :e <filename>
 - '%' can use current file
@@ -322,13 +322,58 @@ can combine with + and - like that
 - `:g/^[ tab]*$/d` delete all empty line inclue (space or tab)
 - `:%s/^  *//` or delete all leading space
 - `:%s/  *$//` delete all ending space
+- `:g/^[[:digit:]]/m$` move all line with number in begining of line to the end of file
+- `1,3g/^/300t$` copy 3 time2 line 300 to the end of file
+
 7. a final look at pattern matching
-
-
-
+` :/^Part 2/,/^Part 3/g /^Chapter/ .+2w >> begin | +t$`: can use `|` to do other command
 
 # Advanced editing
+1. Customizing
+- Show all options are `:set all`
+- Or command `set` : look for
+5. Exec Unix commands
+- `:r !command` can have result in your file.
+- `so` cand use as `source`
+
+2. Saving commands
+    a. Word abbreviation
+    - :ab <key> <phrase>
+    - ex: :ab chxh cong hoa xa hoi
+    - unset using comand: :unab <key>
+    - show all: `:ab` 
+
+    b. Map command
+    - `:map <key> <phrase>` 
+    c. Mapping with a leader
+    - `:map <leader>X :q<cr>`   use leader key is X
+    - set leader key by: `:let mapleader='X'`
+
+    d. interpretation by ex
+    e. Example
+3. Using ex Scripts
+4. Editing Program source code
+
+
 # Vim improve
+## Extended Regular Expression
+1. In visual mode
+- n iw/aw: select wordk
+- n is: select sentence
+- n ip: select paragragh
+
+2. In search pattern
+- `\|` mean `or`: `house \| IDE`
+- `\$` mean a 'concact'. foobeep\&... matches foo in foobeep, and .*Peter\&.*Bob matches in a line containing both Peter and Bob.
+- `\+` match one or more. the same as `*` match nothing or more
+- `\?` or `\=` or ? is match one or zero
+- `\{m,n}` : repeat n-m times
+- `\{,n}`: repeat as much as 0 to n times
+- `\{n,}`: repeat at least n times
+- `:help regexp` Include all of this POWERFUL
+
+
+
 # Graphical Vim
 # Multiple Windows in Vim
 # Vim enhancements for programmer

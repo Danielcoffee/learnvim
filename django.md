@@ -95,10 +95,23 @@ STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 ## User authentication
 1. Template
-- 
 2. URLs
 3. Admin
 
+## Bootstrap
+- Use [Django.crispy.form](https://github.com/django-crispy-forms/django-crispy-forms)
+- Install: python -m pip install django-crispy-forms==1.13.0
+- python -m pip install crispy-bootstrap5==0.6
+- update setting file 
+
+## Password reset
+- for testing use console backend
+- add line for setting: EMAIL_BACKEND = ....
+
+## Email
+- Use SendGrid provider
+## Newspaper App
+## Permission & Authentiation
 
 
 ## Admin site

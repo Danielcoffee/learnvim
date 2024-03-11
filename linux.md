@@ -1,5 +1,26 @@
 # Command Line
 # Getting Started
+## File & directories
+- commondly used class
+- [:alnum:]
+- [:alpha:]
+- [:digit:]
+- [:lower:]
+- [:upper:]
+
+5. Working with command
+- type <command>: display command type
+- which <command>: display executable location
+- apropos <command>: display apropriate search
+- whatis <command> : brief discription about the command
+- infor <command>: lot of real information
+
+6. Redirection
+:wq
+# Configuration and the enviroment
+# common task and essential tools
+# writing shell script
+
 
 ## Start
 ### Gnome 3
@@ -122,17 +143,6 @@ faf
 + 
 ## Shell scripts
 
-
-# Administrator
-## System
-
-## Install
-## Manager software
-## Managing User
-## Disk and file systems
-
-# Security
-
 1. Piping
 
     - ls ~ | wc -l: count how many folder and file in current folder.
@@ -146,6 +156,11 @@ faf
     - ls -lh: show more & human view
     - ls -lah: more information & human
 
+
+
+
+
+iii
 3. Tmux
 - tmux new -s <name>: new session
 - C-b: c: new window. we can switch other window buy <number> or N, P

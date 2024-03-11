@@ -13,16 +13,19 @@ replacement. With one command me
    can automatically replace a word (g child
 or a string of characters) wherever it occurs in the file.
 
-
 GLO hehe GLO
 In a GLObal replacement, the
-ex editor checks each line of a file for a given pattern of characters.
+EX EDITOR CHECKS EACH LINE OF A FILE FOR A GIVEN PATTERN OF CHARACTERS.
 On all lines that the pattern is found, ex replaces the pattern with a new string of characters.
 For right now, we’ll treat daniel the search pattern as if it were a simple string; later in the chapter we’ll look at the powerful pattern-matching language redn as regular expressions.
+Introduction Functions into the lines:
+The greast of times; the worst of times:  moving
+The greast of times; the worst of times:  moving
+Name: RayFeld; Areas: PC, Unix; Phone: 765-4321
+Name: Susan S.Joy; Areas: Graphics; Phone: 999-3333
 
 
-red flajdfaf GLO
-GLObal replacement really uses two ex commands: :g (GLObal) and :s (substitute).
+
 /home/daniel/gc
 Since the GLO or red
 oi donot red child
@@ -39,6 +42,7 @@ privileges, owner, and time of last modification.
 <syntax>
 int stat(const char *filename, struct stat *data);
 ...
+For right now, we’ll treat daniel the search pattern as if it were a simple string; later in the chapter we’ll look at the powerful pattern-matching language redn as regular expressions.
 retval = stat(filename, data);</syntax>
 <parameters>
 <param><name>filename</name>
@@ -49,3 +53,5 @@ You can give the ...
 </para></param></parameters>
 </reference>
 ENTER
+33
+23

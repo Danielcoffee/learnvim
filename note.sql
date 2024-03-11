@@ -252,3 +252,11 @@ CREATE TABLE "swipes" (
     FOREIGN KEY("station_id") REFERENCES "stations"("id"),
     FOREIGN KEY("card_id") REFERENCES "cards"("id")
 )
+-- Work with CSV
+.import --csv --skip 1 mfa.csv collections
+- `--skip 1`: row 1 need to skip
+
+INSERT INTO "collections" ("title", "accession_number", "acquired") 
+SELECT "title", "accession_number", "acquired" FROM "temp";
+
+-- We can insert data from temp table to collection table.
