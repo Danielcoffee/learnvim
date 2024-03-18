@@ -1,0 +1,28 @@
+int fce (int v1, int v2)
+  {
+
+
+  printf("01 - some line\n");
+  printf("01 - some line\n");
+  printf("01 - some line\n");
+  printf("01 - some line\n");
+  printf("01 - some line\n");
+  printf("01 - some line\n");
+
+  if (thiscode == anysense)
+    {
+    
+    printf('07 some other line\n');
+    Printf('07 some other line\n');
+    PRINTF('07 SOME OTHER LINE\N');
+    PRINTF('07 SOME OTHER LINE\N');
+    PRINTF('07 SOME OTHER LINE\N');
+    }
+
+  
+  printf('07 some other line\n');
+  printf('07 some other line\n');
+  printf('07 some other line\n');
+  printf('07 some other line\n');
+  }
+

@@ -10,6 +10,10 @@ git config --global -e: edit all global setting
 * for help: git config on google or git config --help/ -h
 
 ## Create repostory:
+git remote add origin <https://github.com/Danielcoffee/project.git>
+git branch -M main
+git push -u origin main
+
 
 * git init
 * show folder: ls -a

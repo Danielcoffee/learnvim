@@ -118,7 +118,6 @@
 - Then we can use '.' to repeat
 - <number> + J: can join mutil lines: `powerful`
 
-
 # Moving around in a hurry
 ## Movement by screen
 ### Scrolling the screen
@@ -373,13 +372,49 @@ can combine with + and - like that
 - `:help regexp` Include all of this POWERFUL
 
 
-
 # Graphical Vim
 # Multiple Windows in Vim
-# Vim enhancements for programmer
-# Vim scripts
-# Other cool stuff in Vim
-# Some vim power Techniques
-# Vim as IDE
-# Vi is everywhere
-# Epilogue
+## Opening window
+- `:[n]split [++opt] [+cmd] [file]`
+- `:vsplit <file>` or `:split <file>` cansplit window
+- or we can use `CTRL + W_S` or `CTRL + W_CTRL + S` or `CTRL + W_SHILF + S`: split
+- or we can use `CTRL + W_V` or `CTRL + W_CTRL + V`: vsplit
+## Moving window
+- Use `CTRL+W` then `J H K L B N P`
+### Moving and change layout
+- Use `CTRL + W` then `SHIFT + J H K L T`
+- Then use `X` for swap
+### resize Window
+- Use `CTRL + W` then: `-` `+` or `=`
+- or `<` `>` or `|`
+
+### buffer and their interaction with windows
+- `:ls` or `:ls!` to show buffers
+- `:windo cmd` exp: `:windo %s/buffer/BUFFER/g` can change in all buffer
+- `:buffer <number>`: open buffer
+- `:b <number>`: open buffer
+### Closing and Quiting Window
+- It is quit, close, hide
+- `ctrl-w` then 'q'
+- `ctrl-w` then 'c'
+- `ctrl-w` then 'h' or 'o'
+
+# Vim enhancements
+- Use `:mkview` and `:loadview` to preserve folds between sessions
+## The folad command <POWERFUL>
+### Manual folding
+- turn on: `:set foldenable`
+
+- What you see what you fold
+- turn on: `zo`
+- close fold: `zc`
+- set foldcolumn `:set foldcolumn=3` 
+- `~~` or `g~~`: turn on CAP all line
+- Use `indent` to control fold:
+    + `:set foldmethod=indent`
+    + `:set foldlevel=0`
+    + can use `zr` and `zm` to control  
+
+## Scripts
+- `colorscheme <color>`
+- <color>: desert, morning, shine, evening 

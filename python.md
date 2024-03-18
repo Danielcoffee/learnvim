@@ -11,3 +11,6 @@ dict_values(['one', 'two', 'three'])
 >>> dic1.keys()
 dict_keys(['1', 2, 3])
 
+## Circular references
+- garage collectior
+

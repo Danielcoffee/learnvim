@@ -16,7 +16,15 @@
 - infor <command>: lot of real information
 
 6. Redirection
-:wq
+- cat > <filename>
+text here.....
+
+---> can create file with text inside
+
+
+
+
+
 # Configuration and the enviroment
 # common task and essential tools
 # writing shell script
@@ -31,8 +39,13 @@
 ## Linux desktop
 
 # Power User
+- sudo -s: use root
+- sudo -i or `su`: then pass
+- password user # with password root
+- exit: to quit
 ## Shell
 - echo $PATH: path to variable: run left to right.
+- trick: can add current to path: `PATH=$PATH:.`
 - can add your command to /home/<name>/.local/bin
 - type -a <command name>: locate where command.
 - locate <command name>: locate where command.
@@ -92,6 +105,9 @@ faf
 ## 4. File systems
 - check permission: ls -ld <filename>
 - chmod 700 <name> change permission
+- ower : u | group g | other a
+- `chmod a+rx /example`
+
 
 ### Using metacharacters and operator
 - *: for any character
@@ -128,6 +144,7 @@ faf
 - find /etc -iname '*passwd*': iname have case sensitive
 
 3. use grep: search file or folder
+- grep [option] pattern [file]
 - grep desktop /etc/serveces
 - grep -i desktop /etc/services `i`: case-insensitive
 - `-v`: don't contain a selected string
@@ -135,6 +152,12 @@ faf
 - `l`: just show file of text searching
 - combine with |
 - ip addr show | grep inet
+- `-n`: show line number of pattern
+- `-v`: reverse the search( don't have the line of pattern)
+- use `-e` to commbine more pattern `grep -e two -e three file`
+
+## Linux Environment
+- `printenv`: show all global environment 
 
 ## Running process
 - use ps

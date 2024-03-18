@@ -1,5 +1,35 @@
 # Useful command in django
+# Docker
+- Create dockerfile nexte to manage.py
+- Create .dockerignore file
+- Run `docker build .`
+- create docker-compose.yml file
+- Run `sudo docker compose up` or `sudo docker compose up -d` in detach mode
+- Run `sudo docker compose down`
+- Can run `sudo docker compose logs` to see bugs...
+- `sudo docker compose exec web python manage.py createsuperuser`
 
+
+
+# PostgreSQL
+# Bookstore
+# Pages App
+# User
+# Static Assets
+# Advanced User
+# Enviroment
+# Email
+# Book app
+# review app
+# File/image upload
+# Permission
+# Search
+# Performance
+# Security
+# Deployment
+
+
+# Old
 django-admin startproject <name>
 django-admin: show lot of command
 python3 manage.py runserver

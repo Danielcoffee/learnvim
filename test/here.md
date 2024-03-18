@@ -21,10 +21,13 @@ For right now, we’ll treat daniel the search pattern as if it were a simple st
 Introduction Functions into the lines:
 The greast of times; the worst of times:  moving
 The greast of times; the worst of times:  moving
-Name: RayFeld; Areas: PC, Unix; Phone: 765-4321
+: RayFeld; Areas: PC, Unix; Phone: 765-4321
 Name: Susan S.Joy; Areas: Graphics; Phone: 999-3333
 
-
+{ code herer
+here
+and then
+}
 
 /home/daniel/gc
 Since the GLO or red
