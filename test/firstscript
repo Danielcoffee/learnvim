@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# date & who
+echo -n "this is for date: "
+date
+echo -n "this is for who: "
+who

@@ -40,6 +40,9 @@
 - dG: delete to end of file: "POWERFULL"
 - X: delete character front of cursor
 - x: delete character at cursor
+- dip: delete all to paragraphap
+- dap : delete all & paragraph
+
 
 ## Undo
 - Use 'u' to undo last command
@@ -84,7 +87,7 @@
 - r: replack
 - R: replace util 'esc'
 - number + insert
-- 2ra, 23a* 'esc', 3i*'esc',
+- 2ra, 23a* 'esc', 3i*'esc', <POWERFUL>
 
 
 ## Copy
@@ -222,6 +225,8 @@ $ vim + file
 - "d7yy: yanking then use: "dp to use
 - "Ayy: with capital letter to append text
 
+
+
 ## Marking place
 - m<letter>: mark new place
 - 'x or `x to exactly or first character of line.
@@ -277,6 +282,7 @@ can combine with + and - like that
 - `:s/old/new/g`: global
 - `50,100s/old/new/g` : search line 50 to 100
 - `1,$s/old/new/g`  or `:%s/old/new/g` search entire file
+- can use `g` then `ctrl + a` to increase number.
 
 2. Confirming Substitutions
 - confirm with /c then: `l`: for last, `q`: quit
@@ -360,6 +366,10 @@ can combine with + and - like that
 - n iw/aw: select wordk
 - n is: select sentence
 - n ip: select paragragh
+- vi{: select inside {}
+- viw or viW is powerful
+- va{: select all {}
+- use `yi[` to copy inside `[` then use `o` to jump first and end of visual
 
 2. In search pattern
 - `\|` mean `or`: `house \| IDE`
@@ -390,7 +400,7 @@ can combine with + and - like that
 
 ### buffer and their interaction with windows
 - `:ls` or `:ls!` to show buffers
-- `:windo cmd` exp: `:windo %s/buffer/BUFFER/g` can change in all buffer
+- `:windo cmd` exp: `:windo %s/buffer/BUFFER/g` can change in all buffer <POWERFUL>
 - `:buffer <number>`: open buffer
 - `:b <number>`: open buffer
 ### Closing and Quiting Window
@@ -414,6 +424,9 @@ can combine with + and - like that
     + `:set foldmethod=indent`
     + `:set foldlevel=0`
     + can use `zr` and `zm` to control  
+- Use << or >> or =ap to indent
+- Use `<nj` or `>nj` to indent multi line
+
 
 ## Scripts
 - `colorscheme <color>`

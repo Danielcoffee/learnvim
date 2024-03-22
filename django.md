@@ -9,10 +9,20 @@
 - Can run `sudo docker compose logs` to see bugs...
 - `sudo docker compose exec web python manage.py createsuperuser`
 
-
-
 # PostgreSQL
 # Bookstore
+## 4 step to adding a custom user mode to project
+1. Create `CustomUser` model
+- install live in docker will change in our local app
+- `docker compose exec web python manage.py startapp accounts`
+- `CustomUser` will inherited from `AbstractUser`
+- update `accounts/model.py`
+
+2. Update `django_project/settings.py`
+3. Customize `UserCreationForm` and `UserChangeForm`
+4. Add the custom user model to `admin.py`
+
+
 # Pages App
 # User
 # Static Assets
