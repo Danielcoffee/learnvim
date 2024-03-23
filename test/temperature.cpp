@@ -4,8 +4,13 @@ jflkajf
 jfkdjk
 jkjk
 kjk
-
+helo
 const data = [];
+
+it is very good 
+
+
+
 
 data[0] = kkk`djf;
 data[1] = jflkajf;
@@ -20,7 +25,7 @@ jfkdjk
 jkjk
 kjk
 
-
+undo
 using namespace std;
 this is ather [ djflakjflka fa klfdjaslkfja ]
 
@@ -36,6 +41,7 @@ int [ djflakjflka fa klfdjaslkfja ]() {
   //Temperature in degrees Celsius (°C) = (Temperature in degrees Fahrenheit (°F) - 32) * 5/9.
   double [ djflakjflka fa klfdjaslkfja ];
 
+  djflakjflka very nice
   cot << "";
   cin >> temperatureF;
 

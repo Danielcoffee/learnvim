@@ -403,6 +403,8 @@ can combine with + and - like that
 - `:windo cmd` exp: `:windo %s/buffer/BUFFER/g` can change in all buffer <POWERFUL>
 - `:buffer <number>`: open buffer
 - `:b <number>`: open buffer
+- `ctrl+n/p` to auto complete word
+
 ### Closing and Quiting Window
 - It is quit, close, hide
 - `ctrl-w` then 'q'
