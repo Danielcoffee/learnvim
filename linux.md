@@ -180,9 +180,6 @@ faf
     - ls -lah: more information & human
 
 
-
-
-
 iii
 3. Tmux
 - tmux new -s <name>: new session

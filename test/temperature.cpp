@@ -36,7 +36,7 @@ int main() {
 
 
 int [ djflakjflka fa klfdjaslkfja ]() {
-  [ list:something:like: that it amazing] < dsklfjlaksjf>list:something:like: 
+  [ list:something:like: amazing] < dsklfjlaksjf>list:something:like: 
   
   //Temperature in degrees Celsius (°C) = (Temperature in degrees Fahrenheit (°F) - 32) * 5/9.
   double [ djflakjflka fa klfdjaslkfja ];

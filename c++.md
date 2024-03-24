@@ -47,10 +47,16 @@ b. <iomanip>: use  setw(n) to set space to string
 ## decision  
 1. Comparision
 2. Logical
+- use &&, ||
+- and ! for not
+- `()` > `!` > `&&` > `||`
+
 3. If statement
-4. Switc jkdfjas h
+- if have lots of statement : use inside {}
 5. Conditional
-  dfdsflj 
+- we can use conditional operator like:
+- double commission = (sales < 1'000) ? .1 : .05;
+4. while
 
 ## function  
 ## loops

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Test variable
+
+days = 10
+guests = "A lots of guesss"
+
+echo "$guests check in $days ago"
+
+days = 51
+guests = "huge guests"
+
+echo "$guests check in $days ago"
