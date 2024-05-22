@@ -4,7 +4,7 @@
 
 ### Insert mode
 - press 'i'
-
+- this is vim in ipad
 ### Command mode
 - Press ESC twice then hear the bip
 
@@ -15,6 +15,7 @@
 - j: down
 - k: up
 - l: right
+…………`~dS    `d
 
 2. Movement in a line
 - We can ":set vm=10": this is 'wrapmargin' at 10 characters.
