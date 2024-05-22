@@ -1,5 +1,8 @@
 # HELLO - VIM command
 
+- This is very nice to use keyboard with text
+- Nice to know first
+
 ## MODE
 
 ### Insert mode
